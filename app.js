@@ -43,3 +43,49 @@ function mostrarBurguerMenu() {
 }
 
 document.addEventListener("DOMContentLoaded", mostrarBurguerMenu)
+
+function botonSeleccionado() {
+
+
+    const opciones = document.querySelectorAll(".nav-header-lista-item");
+
+    opciones.forEach(element => {
+
+        console.log(element.getAttribute("aria-selected"));
+
+
+        if (element.getAttribute("aria-selected") == "true") {
+
+            element.classList.add("btn-activo")
+        }
+
+        element.addEventListener("click", () => {
+
+            if (element.getAttribute("aria-selected") !== "true") {
+
+
+                opciones.forEach(element => {
+                    element.setAttribute("aria-selected", "false")
+                    element.classList.remove("btn-activo");
+                });
+
+                element.setAttribute("aria-selected", "true")
+
+                element.classList.add("btn-activo")
+
+
+
+            }
+
+        })
+
+    });
+
+
+
+
+
+
+}
+
+document.addEventListener("DOMContentLoaded", botonSeleccionado);

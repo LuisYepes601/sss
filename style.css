@@ -69,6 +69,9 @@ body {
   list-style: none;
   font-family: var(--roboto);
   font-weight: 400;
+  padding: .8rem;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .container-search {
@@ -140,6 +143,9 @@ body {
 .active-burguer ul li {
 
   font-size: clamp(1rem, 3vw, 1.5rem);
+  width: 100%;
+  padding: .7rem;
+  border-radius: 10px;
 }
 
 .main {
@@ -210,6 +216,12 @@ body {
 
   background-color: var(--order-now);
   color: white;
+}
+
+.btn-activo {
+
+  background-color: white;
+  color: var(--order-now);
 }
 
 .pizza {
