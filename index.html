@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +22,14 @@
 <body>
 
 
+
   <div class="container">
 
     <header class="header">
       <h2>CHEEZO</h2>
       <nav class="nav-header">
         <ul>
+          <li class="burguer"> <i class="bi bi-list"></i></li>
           <li><strong>Home</strong></li>
           <li>About</li>
           <li>Menu</li>
@@ -34,7 +38,11 @@
         </ul>
 
       </nav>
-      <input type="search" name="search" id="search" class="search" placeholder="Search">
+      <div class="container-search">
+        <input type="search" name="search" id="search" class="search" placeholder="Search">
+        <i  class="bi bi-search"></i>
+      </div>
+      
 
     </header>
 
@@ -49,7 +57,11 @@
       </div>
       <img src="Fondo 1.png" alt="Pizza" class="pizza">
     </main>
+
   </div>
+
+
+  <script src="app.js"></script>
 
 </body>
 

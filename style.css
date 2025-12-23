@@ -69,6 +69,13 @@ body {
   font-weight: 400;
 }
 
+.container-search {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
 .search {
   padding: .6rem;
   border-radius: 20px;
@@ -79,6 +86,20 @@ body {
 .search::placeholder {
   font-weight: 500;
   color: black;
+  padding: 1.5rem;
+}
+
+.bi-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+}
+
+.burguer {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: none;
 }
 
 .main {
@@ -143,6 +164,10 @@ body {
   main {
     flex-direction: column-reverse;
 
+  }
+
+  .burguer {
+    display: block;
   }
 
   .nav-header {
