@@ -150,6 +150,25 @@ body {
 
 .main {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.target-main {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.target-main-burguer {
+
+  display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
@@ -230,6 +249,14 @@ body {
   animation: moverPizza 2.5s infinite ease-in-out;
 }
 
+.hamburguesa {
+  width: 450px;
+  max-width: 100%;
+  animation: tamañoBurguer 2.5s infinite ease-in-out;
+  max-height: 500px;
+
+}
+
 
 @keyframes moverPizza {
 
@@ -248,10 +275,32 @@ body {
   }
 }
 
-@media(max-width:830px) {
-  main {
-    flex-direction: column-reverse;
+@keyframes tamañoBurguer {
 
+  0% {
+
+    transform: scale(1)
+  }
+
+  50% {
+    transform: scale(.8);
+    opacity: 0.5;
+
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media(max-width:830px) {
+.main{
+
+  gap: 5rem;
+}
+  .target-main,
+  .target-main-burguer {
+    flex-direction: column-reverse;
   }
 
   .burguer {
