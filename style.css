@@ -187,11 +187,29 @@ body {
 .order-now {
   background-color: var(--order-now);
   color: white;
+  transition: background-color .5s, color;
+  cursor: pointer;
+
+}
+
+.order-now:hover {
+
+  background-color: transparent;
+  color: var(--order-now);
 }
 
 .btn-menu {
   background-color: transparent;
   color: var(--order-now);
+  cursor: pointer;
+  transition: background-color .5s, color;
+
+}
+
+.btn-menu:hover {
+
+  background-color: var(--order-now);
+  color: white;
 }
 
 .pizza {
