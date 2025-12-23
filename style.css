@@ -241,14 +241,11 @@ body {
     justify-content: center;
 
   }
-}
 
-@media(max-width:380px) {
   body {
     padding: 0;
   }
 
-
-
-
 }
+
+@media(max-width:380px) {}
