@@ -45,6 +45,14 @@ body {
 
 }
 
+.header.header-scrool-active {
+  padding: .8rem;
+  background-color: #991002;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 1s;
+}
+
 .header h2 {
 
   font-family: var(--font-poppins);

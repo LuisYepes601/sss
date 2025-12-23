@@ -46,12 +46,12 @@ function mostrarBurguerMenu() {
         if (boton.classList.contains("bi-x-circle-fill")) {
 
             boton.style.color = "#991002";
-            main.style.opacity="0.3";
+            main.style.opacity = "0.3";
 
 
         } else {
             boton.style.color = "black"
-            main.style.opacity="1";
+            main.style.opacity = "1";
         }
 
 
@@ -105,3 +105,20 @@ function botonSeleccionado() {
 }
 
 document.addEventListener("DOMContentLoaded", botonSeleccionado);
+
+window.addEventListener("scroll", () => {
+
+    const header = document.querySelector(".header");
+
+    const search = document.querySelector(".bi-searc");
+
+    if (window.scrollY > 100) {
+
+        header.classList.add("header-scrool-active")
+
+
+    } else {
+        header.classList.remove("header-scrool-active")
+    }
+
+})
