@@ -134,8 +134,10 @@ body {
   min-height: 300px;
   max-height: 100dvh;
   font-family: var(--font-poppins);
-  
-}.active-burguer ul li{
+
+}
+
+.active-burguer ul li {
 
   font-size: clamp(1rem, 3vw, 1.5rem);
 }
@@ -239,14 +241,10 @@ body {
     justify-content: center;
 
   }
-}
 
-@media(max-width:380px) {
-  body {
+  .body {
     padding: 1rem;
   }
-
-
-
-
 }
+
+@media(max-width:380px) {}
