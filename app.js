@@ -9,6 +9,7 @@ function EliminarSearch() {
     if (!lupita) return;
 
 
+
     search.addEventListener("input", (e) => {
 
         if (!search.value == "") {
@@ -33,7 +34,8 @@ function mostrarBurguerMenu() {
 
     if (!boton) return;
     if (!header) return;
-    
+
+    const main = document.querySelector(".main");
 
     boton.addEventListener("click", () => {
         header.classList.toggle("nav-header")
@@ -41,11 +43,15 @@ function mostrarBurguerMenu() {
 
         boton.classList.toggle("bi-x-circle-fill");
 
-        if(boton.classList.contains("bi-x-circle-fill")){
-            
-            boton.style.color="#991002";
-        }else{
-            boton.style.color="black"
+        if (boton.classList.contains("bi-x-circle-fill")) {
+
+            boton.style.color = "#991002";
+            main.style.opacity="0.3";
+
+
+        } else {
+            boton.style.color = "black"
+            main.style.opacity="1";
         }
 
 
