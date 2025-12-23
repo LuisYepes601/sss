@@ -241,10 +241,14 @@ body {
     justify-content: center;
 
   }
-
-  .body {
-    padding: 1rem;
-  }
 }
 
-@media(max-width:380px) {}
+@media(max-width:380px) {
+  body {
+    padding: 0;
+  }
+
+
+
+
+}
