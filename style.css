@@ -50,7 +50,7 @@ body {
   background-color: #991002;
   color: white;
   border-radius: 10px;
-  transition: background-color 1s;
+  transition: background-color .7s;
 }
 
 .header h2 {
@@ -112,7 +112,10 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
+  color: black;
 
+}.bi-search.bi-search-scrool-activate{
+  color: var(--order-now);
 }
 
 .burguer {

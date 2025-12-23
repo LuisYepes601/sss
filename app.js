@@ -110,15 +110,17 @@ window.addEventListener("scroll", () => {
 
     const header = document.querySelector(".header");
 
-    const search = document.querySelector(".bi-searc");
+    const search = document.querySelector(".bi-search");
 
     if (window.scrollY > 100) {
 
-        header.classList.add("header-scrool-active")
 
+        header.classList.add("header-scrool-active");
+        search.classList.add("bi-search-scrool-activate")
 
     } else {
         header.classList.remove("header-scrool-active")
+        search.classList.remove("bi-search-scrool-activate")
     }
 
 })
