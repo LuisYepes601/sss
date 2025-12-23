@@ -33,11 +33,21 @@ function mostrarBurguerMenu() {
 
     if (!boton) return;
     if (!header) return;
-
+    
 
     boton.addEventListener("click", () => {
         header.classList.toggle("nav-header")
         header.classList.toggle("active-burguer");
+
+        boton.classList.toggle("bi-x-circle-fill");
+
+        if(boton.classList.contains("bi-x-circle-fill")){
+            
+            boton.style.color="#991002";
+        }else{
+            boton.style.color="black"
+        }
+
 
     })
 }
