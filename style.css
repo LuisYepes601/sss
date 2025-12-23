@@ -37,6 +37,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+  position: relative;
 
 }
 
@@ -74,12 +76,15 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  gap: .8rem;
 }
 
 .search {
   padding: .6rem;
   border-radius: 20px;
   border: none;
+  width: 100%;
 
 }
 
@@ -100,6 +105,39 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   display: none;
+}
+
+.active-burguer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 130%;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.active-burguer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--order-now);
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  z-index: 100;
+  background-color: var(--order-now);
+  width: 100%;
+  min-height: 300px;
+  max-height: 100dvh;
+  font-family: var(--font-poppins);
+  
+}.active-burguer ul li{
+
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .main {
@@ -193,15 +231,22 @@ body {
   }
 }
 
-@media(max-width:380px) {
-body{
-  padding: 1rem;
-}
+@media(max-width:470px) {
+
   .header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-  
+
   }
+}
+
+@media(max-width:380px) {
+  body {
+    padding: 1rem;
+  }
+
+
+
+
 }
