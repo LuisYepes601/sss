@@ -45,12 +45,12 @@ function mostrarBurguerMenu() {
 
         if (boton.classList.contains("bi-x-circle-fill")) {
 
-            boton.style.color = "#991002";
+            boton.style.color = "white";
             main.style.opacity = "0.3";
 
 
         } else {
-            boton.style.color = "black"
+
             main.style.opacity = "1";
         }
 

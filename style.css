@@ -114,7 +114,9 @@ body {
   left: 10px;
   color: black;
 
-}.bi-search.bi-search-scrool-activate{
+}
+
+.bi-search.bi-search-scrool-activate {
   color: var(--order-now);
 }
 
@@ -160,6 +162,11 @@ body {
   width: 100%;
   padding: .7rem;
   border-radius: 10px;
+
+}
+
+.bi-list {
+  color: white;
 }
 
 
