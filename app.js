@@ -112,15 +112,19 @@ window.addEventListener("scroll", () => {
 
     const search = document.querySelector(".bi-search");
 
+       const boton = document.querySelector(".bi-list");
+
     if (window.scrollY > 100) {
 
 
         header.classList.add("header-scrool-active");
         search.classList.add("bi-search-scrool-activate")
+        boton.style.color="white";
 
     } else {
         header.classList.remove("header-scrool-active")
         search.classList.remove("bi-search-scrool-activate")
+        boton.style.color="black";
     }
 
 })
